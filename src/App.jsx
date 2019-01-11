@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { HashRouter as Router, Route } from "react-router-dom";
-import Header from './Header';
-import Home from './Home';
-import About from './About';
+import Header from './app/Header';
+import Home from './app/Home';
+import About from './app/About';
 
 class App extends Component {
   render() {
