@@ -8,7 +8,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Menu from './Menu';
 
-const styles = {
+const styles = (theme) => ({
   currentMenuName: {
     margin: '0 auto',
   },
@@ -16,7 +16,10 @@ const styles = {
     position: 'absolute',
     left: 12,
   },
-};
+  colorPrimary: {
+    backgroundColor: theme.palette.primary[900],
+  },
+});
 
 class Bar extends PureComponent {
   constructor() {
@@ -37,7 +40,7 @@ class Bar extends PureComponent {
   render() {
     const { classes } = this.props;
     return (
-      <AppBar position="static">
+      <AppBar position="static" classes={{colorPrimary: classes.colorPrimary}}>
         <Toolbar>
           <IconButton className={classes.menuButton} onClick={this.setMenuOpen(true)}>
             <MenuIcon/>
