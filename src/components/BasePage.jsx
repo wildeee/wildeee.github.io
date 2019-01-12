@@ -7,7 +7,7 @@ import Paper from '@material-ui/core/Paper';
 const style = (theme) => ({
   container: {
     minHeight: 'calc(100vh - 76px)',
-    backgroundColor: theme.palette.grey[300],
+    backgroundColor: theme.palette.primary[100],
     padding: 10,
     '@media (min-width: 600px)': {
       minHeight: 'calc(100vh - 84px)',
