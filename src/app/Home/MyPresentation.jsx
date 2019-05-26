@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import Grid from '@material-ui/core/Grid';
 import MyPicture from './MyPicture';
+import MyContacts from './MyContacts';
 
 class MyPresentation extends PureComponent {
   render() {
@@ -10,7 +11,7 @@ class MyPresentation extends PureComponent {
           <MyPicture/>
         </Grid>
         <Grid item xs={12} sm={8} lg={9}>
-          Meus contatos virão aqui. Ainda está em desenvolvimento, então <strong>aguarde</strong> :)
+          <MyContacts/>
         </Grid>
       </Grid>
     );
